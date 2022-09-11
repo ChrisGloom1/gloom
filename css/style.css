@@ -13,18 +13,22 @@ header{
   background-color: #161718;
   padding: 1.3rem 2.5rem;
   align-items: center;
+  box-shadow: 	
+  3px 3px 3px rgba(170, 88, 55, 0.04),
+  -3px -3px 20px rgb(22, 22, 24, 0.8);
 }
 header h1{
   grid-column: 2 / span 5;
-  color: #df6712;
-  letter-spacing: 0.3rem;
+  color: #e46a14;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px 2px #161718;
 }
 header nav{
   grid-column: 7 / span 5;
   justify-self: end;
 }
 header nav a{
-  color: #df6712;
+  color: #e46a14;
   margin-left: 3rem;
   text-decoration: none;
 }
@@ -33,9 +37,13 @@ main{
   margin: 3.75rem auto;
   padding: 1.3rem;
 }
-main img{
+.img{
   grid-column: span 6;
   width: 100%;
+  background-image: url(/img/chris-gloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   border-radius: 0.4rem;
   box-shadow: 
 	inset 0 0 15px rgba(32, 33, 36, 0),
@@ -52,8 +60,18 @@ main img{
   gap: 2rem;
   border: 1px solid #202124;
 }
+.card a{
+  color: #e46a14;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .card h2{
-  color: #df6712;
+  color: #e46a14;
   text-align: center;
   text-shadow: 2px 2px 2px #161718;
 }
@@ -73,18 +91,89 @@ main img{
 	inset 0px 0px 4px rgba(32, 33, 36, 0.2);
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 .welcome{
   grid-column: span 12;
+  padding: 1rem;
 }
 .welcome h3{
-  color: #ED7014;
+  color: #e46a14;
   text-shadow: 2px 2px 2px #161718;
 }
 .welcome p{
   color: #ad5210
+}
+
+@media screen and (max-width: 1200px){
+  main{
+    max-width: 992px;
+  }
+  .img{
+    grid-column: span 6;
+  }
+  .cards{
+    grid-template-rows: subgrid;
+  }
+  .card h2{
+    padding: 0.3rem;
+  }
+  .card p{
+    padding: 1rem;
+  }
+  #card1{
+    grid-column: span 6;
+  }
+  #card2{
+    grid-column: span 6;
+  }
+  #card3{
+    grid-column: span 3;
+  }
+  #card4{
+    grid-column: 4 / span 3;
+  }
+}
+@media screen and (max-width: 992px){
+  header h1{
+    font-size: 1.2rem;
+    grid-column: 1 / span 3;
+  }
+  header nav{
+    font-size: 1rem;
+    grid-column: 4 / span 9;
+  }
+  header nav a{
+    margin-left: 1.5rem;
+  }
+  main{
+    max-width: 768px;
+  }
+  .cards{
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: none;
+    grid-column: span 12;
+  }
+  .img{
+    grid-column: 2 / span 10;
+    height: 400px;
+    max-height: 400px;
+  }
+  .cards h2{
+    font-size: 1.2rem;
+  }
+  .cards p{
+    font-size: 1rem;
+  }
+  #card1{
+    grid-column: 1 / span 6;
+  }
+  #card2{
+    grid-column: 7 / span 6;
+  }
+  #card3{
+    grid-column: 1 / span 6;
+  }
+  #card4{
+    grid-column: 7 / span 6;
+  }
 }
