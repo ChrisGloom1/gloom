@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #202124;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+header{
+  background-color: #161718;
+  padding: 1.3rem 2.5rem;
+  align-items: center;
+  box-shadow: 	
+  3px 3px 3px rgba(170, 88, 55, 0.04),
+  -3px -3px 20px rgb(22, 22, 24, 0.8);
+}
+header h1{
+  grid-column: 2 / span 5;
+  color: #e46a14;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px 2px #161718;
+}
+header nav{
+  grid-column: 7 / span 5;
+  justify-self: end;
+}
+header nav a{
+  color: #e46a14;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+main{
+  max-width: 1400px;
+  margin: 3.75rem auto;
+  padding: 1.3rem;
+}
+.grid h2{
+  color: #e46a14;
+  text-shadow: 2px 2px 2px #161718;
+}
+.text-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-column: span 6;
+}
+.text-container p{
+  color: #a5a5a5;
+}
+.img{
+  grid-column: span 6;
+  width: 100%;
+  /* background-image: url('../img/chris-gloom.PNG'); */
+  background-color: rgb(63, 63, 63);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 0.4rem;
+  box-shadow: 
+	inset 0 0 15px rgba(32, 33, 36, 0),
+	inset 0 0 20px rgba(32, 33, 36, 0),
+	3px 3px 3px rgba(170, 88, 55, 0.04),
+	-3px -3px 20px rgb(22, 22, 24, 0.8),
+	inset 0px 0px 4px rgba(32, 33, 36, 0.2);
+}

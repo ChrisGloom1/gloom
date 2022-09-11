@@ -40,7 +40,6 @@ main{
 .img{
   grid-column: span 6;
   width: 100%;
-  background-color: #a5a5a5;
   background-image: url('../img/chris-gloom.PNG');
   background-repeat: no-repeat;
   background-size: cover;
