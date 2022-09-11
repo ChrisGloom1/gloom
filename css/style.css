@@ -40,7 +40,8 @@ main{
 .img{
   grid-column: span 6;
   width: 100%;
-  background-image: url(/img/chris-gloom.png);
+  background-color: #a5a5a5;
+  background-image: url('../img/chris-gloom.PNG');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -61,7 +62,6 @@ main{
   border: 1px solid #202124;
 }
 .card a{
-  color: #e46a14;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -76,7 +76,7 @@ main{
   text-shadow: 2px 2px 2px #161718;
 }
 .card p{
-  color: #ad5210;
+  color: #a5a5a5;
   text-align: center;
   padding: 2rem;
 }
@@ -101,7 +101,7 @@ main{
   text-shadow: 2px 2px 2px #161718;
 }
 .welcome p{
-  color: #ad5210
+  color: #a5a5a5;
 }
 
 @media screen and (max-width: 1200px){
